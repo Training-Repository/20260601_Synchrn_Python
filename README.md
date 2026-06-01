@@ -8,3 +8,9 @@
     * [Git for Windows (Windows users)](https://gitforwindows.org/)
         * Git
         * Bash
+* [Python Docs](https://docs.python.org/)
+* [PEP Index](https://peps.python.org/)
+* [PEP-8: Python Style guide](https://peps.python.org/pep-0008/)
+* [PEP-20: Zen of Python](https://peps.python.org/pep-0020/)
+* [Strings: Lexical analysis](https://docs.python.org/3.13/reference/lexical_analysis.html)
+    * [Format Specifiers](https://docs.python.org/3.13/library/string.html#formatspec)
