@@ -66,22 +66,29 @@
 #endregion
 
 
+#region 3
+# from collections import namedtuple
 
-from collections import namedtuple
+# points = [[1, 2], [5, 3], [7, 1]]
 
-points = [[1, 2], [5, 3], [7, 1]]
+# Point = namedtuple("Point_data", "x y")
+# p1 = Point(1, 2)
+# p2 = Point(5, 3)
+# p3 = Point(7, 1)
 
-Point = namedtuple("Point_data", "x y")
-p1 = Point(1, 2)
-p2 = Point(5, 3)
-p3 = Point(7, 1)
+# points_2 = [p1, p2, p3]
 
-points_2 = [p1, p2, p3]
+# print(points)
+# print(points_2)
 
-print(points)
-print(points_2)
+# print(type(p1))
 
-print(type(p1))
+# print(p1[0], p1[1])
+# print(p1.x, p1.y)
+#endregion
 
-print(p1[0], p1[1])
-print(p1.x, p1.y)
+
+tp1 = (3,)
+print(f"{type(tp1) = }, {tp1 = }")
+print(tp1[0])
+

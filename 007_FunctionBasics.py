@@ -113,17 +113,52 @@
 
 
 #region VariableArgs
-def add(a, b, *others)->int:
-    print(f"{type(a) = }, {type(b) = }, {type(others) = }")
-    print(f"{a = }, {b = }, {others = }")
-    sum  = a + b
-    for val in others:
-        sum += val
-    return sum
+# def add(a, b, *others)->int:
+#     print(f"{type(a) = }, {type(b) = }, {type(others) = }")
+#     print(f"{a = }, {b = }, {others = }")
+#     sum  = a + b
+#     for val in others:
+#         sum += val
+#     return sum
 
-print(add(1, 2))
-print(add(1, 2, 3))
-print(add(1, 2, 3, 4))
-print(add(1, 2, 3, 4, 5))
+# print(add(1, 2))
+# print(add(1, 2, 3))
+# print(add(1, 2, 3, 4))
+# print(add(1, 2, 3, 4, 5))
 #endregion
 
+
+#region Variable Keyworded arguments
+# def PrintEmp(ceo, cto, cfo, **others):
+#     print(f"{ceo = }")
+#     print(f"{cto = }")
+#     print(f"{cfo = }")
+
+#     # print(f"{type(others) = }, {others = }")
+#     for title, name in others.items():
+#         print(f"{title} = {name}")
+
+# PrintEmp("Amit", "Nilesh", "Tanveer", cxo="Naveen", Director="Gaurav")
+#endregion
+
+
+#region VarAgrs-Application
+
+def PrintEmp(ceo, cto, cfo, **others):
+    print(f"{ceo = }")
+    print(f"{cto = }")
+    print(f"{cfo = }")
+
+    # print(f"{type(others) = }, {others = }")
+    for title, name in others.items():
+        print(f"{title} = {name}")
+
+def PrintWithBorders(*vArgs, **kwArgs):     # Packing the data
+    print("\n\n###############################\n")
+    PrintEmp(*vArgs, **kwArgs)              # Unpacking the data
+    print("\n###############################\n\n")
+
+PrintEmp("Amit", "Nilesh", "Tanveer", cxo="Naveen", Director="Gaurav")
+print("\n\n\n------------------------------------------------------------\n\n\n")
+PrintWithBorders("Amit", "Nilesh", "Tanveer", cxo="Naveen", Director="Gaurav")
+#endregion
