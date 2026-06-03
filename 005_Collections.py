@@ -136,3 +136,4 @@ a = 10
 print(a)
 print(str(a))
 print(a.__str__())
+print(a.__repr__())
