@@ -87,8 +87,52 @@
 # print(p1.x, p1.y)
 #endregion
 
+#region 4
+# tp1 = (3,)
+# print(f"{type(tp1) = }, {tp1 = }")
+# print(tp1[0])
+#endregion
 
-tp1 = (3,)
-print(f"{type(tp1) = }, {tp1 = }")
-print(tp1[0])
+#region Hashable
+# a = 10
+# b = 10.5
+# c = [1, 2, 3]
+# d = tuple(c)
+# e = set(c)
+# f = "Test"
 
+# print(f"{type(a) = }, {a}")
+# print(f"{type(b) = }, {b}")
+# print(f"{type(c) = }, {c}")
+# print(f"{type(d) = }, {d}")
+# print(f"{type(e) = }, {e}")
+# print(f"{type(f) = }, {f}")
+
+# print(hash(a))
+# print(hash(b))
+# # print(hash(c))
+# print(hash(d))
+# # print(hash(e))
+# print(hash(f))
+
+# s1 = "roll"
+# g = {
+#     s1: 1,
+#     "name": "Rakesh",
+#     "Dept": "Operations"
+# }
+# print(f"{type(g) = }, {g}")
+
+# print(g["roll"])
+
+
+# lst = [1, 2, 3, 4, [5, 6]]
+# print(lst)
+# st = set(lst)
+# print(st)
+#endregion
+
+a = 10
+print(a)
+print(str(a))
+print(a.__str__())

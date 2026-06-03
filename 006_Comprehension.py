@@ -18,3 +18,8 @@ lst = [fr.upper()           for fr in fruits           if 'a' not in fr.lower()]
 st  = {fr.upper()           for fr in fruits           if 'a' not in fr.lower()} ; print(st , type(st))
 dt  = {fr.upper():len(fr)   for fr in fruits           if 'a' not in fr.lower()} ; print(dt , type(dt))
 tup = tuple(fr.upper()           for fr in fruits           if 'a' not in fr.lower()) ; print(tup, type(tup))
+
+
+
+even_numbers = [n   for n in range(101)    if n%2 == 0]
+print(even_numbers)

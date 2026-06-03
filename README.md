@@ -16,3 +16,5 @@
     * [Format Specifiers](https://docs.python.org/3.13/library/string.html#formatspec)
     * [Common Operations](https://docs.python.org/3/library/string.html#module-string)
     * [Gentle Intro (String slicing)](https://docs.python.org/3/tutorial/introduction.html) (search for `slicing`)
+* [Builtin Exceptions](https://docs.python.org/3/library/exceptions.html)
+    * [Exception Hierarchy](https://docs.python.org/3/library/exceptions.html#exception-hierarchy)

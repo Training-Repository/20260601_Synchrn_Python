@@ -144,21 +144,33 @@
 
 #region VarAgrs-Application
 
-def PrintEmp(ceo, cto, cfo, **others):
-    print(f"{ceo = }")
-    print(f"{cto = }")
-    print(f"{cfo = }")
+# def PrintEmp(ceo, cto, cfo, **others):
+#     print(f"{ceo = }")
+#     print(f"{cto = }")
+#     print(f"{cfo = }")
 
-    # print(f"{type(others) = }, {others = }")
-    for title, name in others.items():
-        print(f"{title} = {name}")
+#     # print(f"{type(others) = }, {others = }")
+#     for title, name in others.items():
+#         print(f"{title} = {name}")
 
-def PrintWithBorders(*vArgs, **kwArgs):     # Packing the data
-    print("\n\n###############################\n")
-    PrintEmp(*vArgs, **kwArgs)              # Unpacking the data
-    print("\n###############################\n\n")
+# def PrintWithBorders(*vArgs, **kwArgs):     # Packing the data
+#     print("\n\n###############################\n")
+#     PrintEmp(*vArgs, **kwArgs)              # Unpacking the data
+#     print("\n###############################\n\n")
 
-PrintEmp("Amit", "Nilesh", "Tanveer", cxo="Naveen", Director="Gaurav")
-print("\n\n\n------------------------------------------------------------\n\n\n")
-PrintWithBorders("Amit", "Nilesh", "Tanveer", cxo="Naveen", Director="Gaurav")
+# PrintEmp("Amit", "Nilesh", "Tanveer", cxo="Naveen", Director="Gaurav")
+# print("\n\n\n------------------------------------------------------------\n\n\n")
+# PrintWithBorders("Amit", "Nilesh", "Tanveer", cxo="Naveen", Director="Gaurav")
 #endregion
+
+
+def divide(dividend, divisor):
+    quotient = dividend/divisor
+    remainder = dividend%divisor
+    return quotient, remainder
+
+
+# print(divide(7, 3))
+
+q, r = divide(7, 3)
+print(f"{q = }, {r = }")
