@@ -19,3 +19,20 @@
 * [Builtin Exceptions](https://docs.python.org/3/library/exceptions.html)
     * [Exception Hierarchy](https://docs.python.org/3/library/exceptions.html#exception-hierarchy)
 * [Open (file)](https://docs.python.org/3/library/functions.html#open)
+
+## Books
+* [Object-Oriented Analysis and Design with Applications: Grady Booch](https://amzn.in/d/0awYnOR0)
+
+## Snippets
+* Create a virt. env --> `python -m venv .venv-training`
+* Enter into a virt. env --> 
+    * Bash (Win) --> `source .venv-training/Scripts/activate`
+    * Bash (Mac) --> `source .venv-training/bin/activate`
+    * Cmd Prompt --> `.venv-training\Scripts\activate.bat`
+    * Power Shell --> `.venv-training\Scripts\activate.ps1`
+* Exit a virt. env. --> `deactivate`
+* Pip Commands
+    * `pip install <package_name>`
+    * `pip list` to list the installed packages
+    * `pip freeze > requirements.txt` to store the installed packages (and specific versions) into the file
+    * `pip install -r requirements.txt` to install packages specified in the file
